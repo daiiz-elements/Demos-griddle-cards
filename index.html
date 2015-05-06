@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Demo griddle-cards</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="icon.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="icon.png">
+
+    <!-- import polymer polyfill -->
+    <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+    <!-- import griddle-cards -->
+    <link rel="import" href="bower_components/griddle-cards/griddle-cards.html" />
+
+    <style>
+      html,body {
+        background-color: #e9e7e4;
+        margin: 20px;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        font-family: roboto;
+      }
+    </style>
+
+  </head>
+  <body fullbleed layout vertical>
+    <h1>griddle-cards</h1>
+
+    <griddle-cards id='t'
+        column=3 maxWidth=500 minWidth=200 marginLeft=20 marginRighr=20>
+    </griddle-cards>
+
+    <script src="main.js"></script>
+  </body>
+</html>
